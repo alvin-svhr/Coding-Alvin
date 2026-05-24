@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alviadi — Portofolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ════════════════════════════════════════════════════════════════
+   ▓▓▓  EDIT ZONE  ▓▓▓
+   ────────────────────────────────────────────────────────────────
+   Almost everything you might want to change lives here.
+   Change a value, save, and refresh — it updates everywhere.
+   ════════════════════════════════════════════════════════════════ */
+
+:root {
+
+  /* ─── COLOURS — ACTIVE THEME: LINEN ──────────────────────────
+     Clean warm off-white · deep ink · amber accent.
+     To switch themes, copy a preset below over these values.
+     ──────────────────────────────────────────────────────────── */
+
+  --color-bg:         #F6F2EA;   /* page background */
+  --color-bg-alt:     #ECE5D5;   /* cards, project panels */
+  --color-ink:        #1A1E2E;   /* main text */
+  --color-ink-soft:   #4D556A;   /* secondary text */
+  --color-ink-faint:  #8A92A3;   /* labels, captions */
+  --color-accent:     #C18A2C;   /* warm amber */
+  --color-accent-deep:#946517;   /* accent darker */
+  --color-rule:       #D6CDB7;   /* borders */
+
+
+  /* ─── TYPOGRAPHY ───────────────────────────────────────────── */
+  --font-display:     "Fraunces", Georgia, serif;
+  --font-body:        "Manrope", -apple-system, sans-serif;
+  --weight-light:     300;
+  --weight-regular:   400;
+  --weight-medium:    500;
+  --weight-bold:      600;
+
+  /* ─── TYPE SCALE ───────────────────────────────────────────── */
+  --size-hero:        clamp(48px, 7.5vw, 104px);
+  --size-h2:          clamp(36px, 4.5vw, 56px);
+  --size-h3:          24px;
+  --size-lede:        18px;
+  --size-prose:       18px;
+  --size-body:        16px;
+  --size-meta:        12px;
+
+  /* ─── SPACING ──────────────────────────────────────────────── */
+  --space-section:    120px;
+  --space-section-sm: 72px;
+  --space-block:      40px;
+  --page-padding:     48px;
+  --page-padding-sm:  24px;
+  --page-max:         1200px;
+
+  /* ─── DETAILS ──────────────────────────────────────────────── */
+  --radius:           12px;
+  --radius-pill:      999px;
+  --portrait-radius:  16px;     /* 50% = circle, 0 = square, 16px = soft square */
+  --transition:       0.3s ease;
+  --letter-spacing-uc:0.18em;
+}
+
+
+/* ════════════════════════════════════════════════════════════════
+   ▓▓▓  THEME PRESETS  ▓▓▓
+   To switch themes, COPY a block below over the --color-* lines above.
+   ────────────────────────────────────────────────────────────────
+
+   ─── LINEN  (active — warm off-white + ink + amber)
+     --color-bg:          #F6F2EA;
+     --color-bg-alt:      #ECE5D5;
+     --color-ink:         #1A1E2E;
+     --color-ink-soft:    #4D556A;
+     --color-ink-faint:   #8A92A3;
+     --color-accent:      #C18A2C;
+     --color-accent-deep: #946517;
+     --color-rule:        #D6CDB7;
+
+   ─── DUSK  (dark — charcoal + cream + amber)
+     --color-bg:          #1A1814;
+     --color-bg-alt:      #25221C;
+     --color-ink:         #EDE5D4;
+     --color-ink-soft:    #B5AC9A;
+     --color-ink-faint:   #6E665A;
+     --color-accent:      #D4A04E;
+     --color-accent-deep: #B07F30;
+     --color-rule:        #3A3530;
+
+   ─── PAPER  (warm off-white + deep navy + antique gold)
+     --color-bg:          #F4EFE4;
+     --color-bg-alt:      #E8E0CD;
+     --color-ink:         #14213D;
+     --color-ink-soft:    #4A5670;
+     --color-ink-faint:   #8B95A8;
+     --color-accent:      #B08D2E;
+     --color-accent-deep: #8A6B1F;
+     --color-rule:        #C9BFA7;
+
+   ─── FOREST  (off-white + forest green + copper)
+     --color-bg:          #F2EFE8;
+     --color-bg-alt:      #E5E1D6;
+     --color-ink:         #1F3A2E;
+     --color-ink-soft:    #4F6358;
+     --color-ink-faint:   #8A9690;
+     --color-accent:      #B85C2C;
+     --color-accent-deep: #8A4220;
+     --color-rule:        #C5BFA8;
+
+   ─── MIDNIGHT  (deep navy + ivory + rose gold)
+     --color-bg:          #0F1626;
+     --color-bg-alt:      #1A2236;
+     --color-ink:         #F0E6D2;
+     --color-ink-soft:    #A8A090;
+     --color-ink-faint:   #5E5A50;
+     --color-accent:      #C99A6B;
+     --color-accent-deep: #A07449;
+     --color-rule:        #2A334A;
+
+   ════════════════════════════════════════════════════════════════ */
+
+
+/* ════════════════════════════════════════════════════════════════
+   STYLES — you generally won't need to edit below this line.
+   ════════════════════════════════════════════════════════════════ */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  line-height: 1.6;
+  font-weight: var(--weight-regular);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-image:
+    radial-gradient(circle at 10% 0%, color-mix(in srgb, var(--color-accent) 7%, transparent), transparent 50%),
+    radial-gradient(circle at 90% 100%, color-mix(in srgb, var(--color-accent) 5%, transparent), transparent 50%);
+}
+
+.wrap {
+  position: relative;
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 0 var(--page-padding);
+}
+
+/* ─── NAVIGATION ───────────────────────────────────────────── */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0;
+  position: sticky;
+  top: 0;
+  background: color-mix(in srgb, var(--color-bg) 88%, transparent);
+  backdrop-filter: blur(12px);
+  z-index: 100;
+  margin-bottom: 60px;
+}
+
+.monogram {
+  font-family: var(--font-display);
+  font-variation-settings: "SOFT" 50, "WONK" 1, "opsz" 36;
+  font-size: 28px;
+  font-weight: var(--weight-regular);
+  color: var(--color-ink);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.monogram span { color: var(--color-accent); }
+
+nav .links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+}
+
+nav .links a {
+  color: var(--color-ink-soft);
+  text-decoration: none;
+  font-size: var(--size-body);
+  font-weight: var(--weight-medium);
+  transition: color var(--transition);
+  position: relative;
+}
+
+nav .links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1px;
+  background: var(--color-accent);
+  transition: width var(--transition);
+}
+
+nav .links a:hover { color: var(--color-ink); }
+nav .links a:hover::after { width: 100%; }
+
+/* ─── HERO ─────────────────────────────────────────────────── */
+.hero {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 64px;
+  align-items: center;
+  margin-bottom: var(--space-section);
+  min-height: 70vh;
+  padding-top: 20px;
+}
+
+.hero .tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.hero .tag {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: var(--weight-medium);
+  letter-spacing: 0.05em;
+  padding: 7px 16px;
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-pill);
+  color: var(--color-ink-soft);
+  background: color-mix(in srgb, var(--color-bg-alt) 50%, transparent);
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-variation-settings: "SOFT" 40, "WONK" 1, "opsz" 144;
+  font-weight: var(--weight-light);
+  font-size: var(--size-hero);
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  margin-bottom: 28px;
+  color: var(--color-ink);
+}
+
+.hero h1 em {
+  font-style: italic;
+  font-variation-settings: "SOFT" 100, "WONK" 1, "opsz" 144;
+  color: var(--color-accent);
+  font-weight: var(--weight-light);
+}
+
+.hero .meta-line {
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  color: var(--color-ink-soft);
+  margin-bottom: 36px;
+  letter-spacing: 0.02em;
+}
+
+.hero .meta-line .dot { color: var(--color-accent); margin: 0 12px; }
+
+.hero blockquote {
+  border-left: 2px solid var(--color-accent);
+  padding: 4px 0 4px 24px;
+  margin-bottom: 40px;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-variation-settings: "SOFT" 80, "WONK" 1, "opsz" 24;
+  font-size: var(--size-lede);
+  line-height: 1.5;
+  color: var(--color-ink);
+  max-width: 540px;
+}
+
+.hero blockquote cite {
+  display: block;
+  font-style: normal;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: var(--weight-medium);
+  color: var(--color-ink-faint);
+  margin-top: 12px;
+  letter-spacing: 0.05em;
+}
+
+.hero .ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+
+.btn {
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  font-weight: var(--weight-medium);
+  padding: 14px 28px;
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  transition: all var(--transition);
+  display: inline-block;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background: var(--color-ink);
+  color: var(--color-bg);
+}
+
+.btn-primary:hover {
+  background: var(--color-accent-deep);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-ink);
+  border-color: var(--color-rule);
+}
+
+.btn-secondary:hover {
+  background: var(--color-bg-alt);
+  border-color: var(--color-accent);
+}
+
+/* ─── PROFILE PHOTO (hero) ──────────────────────────────────────
+   Shows your photo (or a fallback) in the right column of the hero.
+   See the comment block in the HTML for instructions on adding
+   your own photo file.
+   ──────────────────────────────────────────────────────────── */
+.hero .portrait {
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--portrait-radius);
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  background:
+    linear-gradient(150deg,
+      color-mix(in srgb, var(--color-accent) 30%, var(--color-bg-alt)),
+      var(--color-bg-alt));
+  border: 1px solid var(--color-rule);
+  box-shadow: 0 20px 60px -20px rgba(26, 30, 46, 0.25);
+}
+
+.hero .portrait::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 125'%3E%3Ccircle cx='50' cy='44' r='18' fill='%234D556A' opacity='0.35'/%3E%3Cpath d='M50 68 C28 68 14 84 14 125 L86 125 C86 84 72 68 50 68 Z' fill='%234D556A' opacity='0.35'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.hero .portrait img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero .portrait img:not([src]),
+.hero .portrait img[src=""] { display: none; }
+
+/* ─── SECTION HEADERS ──────────────────────────────────────── */
+section { margin-bottom: var(--space-section); scroll-margin-top: 100px; }
+
+.section-head { margin-bottom: 56px; max-width: 800px; }
+
+.section-head .num {
+  font-family: var(--font-body);
+  font-size: var(--size-meta);
+  letter-spacing: var(--letter-spacing-uc);
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: var(--weight-bold);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.section-head h2 {
+  font-family: var(--font-display);
+  font-variation-settings: "SOFT" 30, "WONK" 0, "opsz" 72;
+  font-weight: var(--weight-light);
+  font-size: var(--size-h2);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  color: var(--color-ink);
+}
+
+.section-head h2 em {
+  font-style: italic;
+  font-variation-settings: "SOFT" 100, "WONK" 1, "opsz" 72;
+  color: var(--color-accent-deep);
+}
+
+/* ─── TENTANG (ABOUT) ──────────────────────────────────────── */
+.about-body { display: grid; grid-template-columns: 1fr 2fr; gap: var(--space-block); align-items: start; }
+
+.about-meta {
+  background: var(--color-bg-alt);
+  padding: 32px;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-rule);
+}
+
+.about-meta .row { margin-bottom: 20px; }
+.about-meta .row:last-child { margin-bottom: 0; }
+
+.about-meta .label {
+  display: block;
+  font-size: 11px;
+  letter-spacing: var(--letter-spacing-uc);
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: var(--weight-bold);
+  margin-bottom: 6px;
+}
+
+.about-meta .value {
+  display: block;
+  font-size: var(--size-body);
+  color: var(--color-ink);
+  font-weight: var(--weight-medium);
+}
+
+.about-prose {
+  font-size: var(--size-prose);
+  line-height: 1.75;
+  color: var(--color-ink);
+}
+
+.about-prose p { margin-bottom: 20px; }
+.about-prose em { font-style: italic; color: var(--color-accent-deep); }
+
+/* ─── PRESTASI (ACHIEVEMENTS) ──────────────────────────────── */
+.achievements { display: flex; flex-direction: column; gap: 4px; }
+
+.achievement {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 32px;
+  padding: 28px 24px;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  transition: all var(--transition);
+  align-items: start;
+}
+
+.achievement:hover {
+  background: var(--color-bg-alt);
+  border-color: var(--color-rule);
+}
+
+.achievement .year {
+  font-family: var(--font-display);
+  font-variation-settings: "SOFT" 0, "opsz" 36;
+  font-size: 28px;
+  font-weight: var(--weight-light);
+  color: var(--color-accent);
+  line-height: 1;
+  padding-top: 4px;
+}
+
+.achievement .body h3 {
+  font-family: var(--font-display);
+  font-variation-settings: "SOFT" 30, "WONK" 0, "opsz" 24;
+  font-weight: var(--weight-regular);
+  font-size: var(--size-h3);
+  line-height: 1.2;
+  color: var(--color-ink);
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.achievement .body .venue {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-ink-soft);
+  margin-bottom: 10px;
+  font-weight: var(--weight-medium);
+}
+
+.achievement .body p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-ink-soft);
+  max-width: 640px;
+}
+
+/* ─── KARYA (PROJECTS) ─────────────────────────────────────── */
+.projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+
+.project {
+  background: var(--color-bg-alt);
+  padding: 36px;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-rule);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -20px rgba(26, 30, 46, 0.15);
+}
+
+.project .tag {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: var(--letter-spacing-uc);
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: var(--weight-bold);
+  padding: 5px 12px;
+  background: color-mix(in srgb, var(--color-accent) 12%, transparent);
+  border-radius: var(--radius-pill);
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  font-family: var(--font-display);
+  font-variation-settings: "SOFT" 40, "WONK" 0, "opsz" 36;
+  font-weight: var(--weight-regular);
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  color: var(--color-ink);
+  margin-bottom: 14px;
+}
+
+.project h3 em {
+  font-style: italic;
+  font-variation-settings: "SOFT" 100, "WONK" 1, "opsz" 36;
+  color: var(--color-accent-deep);
+}
+
+.project p {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--color-ink-soft);
+  margin-bottom: 24px;
+}
+
+.project .meta {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--color-ink-faint);
+  font-weight: var(--weight-medium);
+  padding-top: 18px;
+  border-top: 1px solid var(--color-rule);
+}
+
+/* ─── KONTAK (FOOTER) ──────────────────────────────────────── */
+footer {
+  border-top: 1px solid var(--color-rule);
+  padding: 64px 0 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: end;
+}
+
+footer .closing {
+  font-family: var(--font-display);
+  font-variation-settings: "SOFT" 80, "WONK" 1, "opsz" 72;
+  font-style: italic;
+  font-size: clamp(36px, 4vw, 52px);
+  font-weight: var(--weight-light);
+  color: var(--color-ink);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+footer .closing em { color: var(--color-accent); }
+
+footer .contact-list { text-align: right; }
+
+footer .contact-list .label {
+  display: block;
+  font-size: 11px;
+  letter-spacing: var(--letter-spacing-uc);
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: var(--weight-bold);
+  margin-bottom: 14px;
+}
+
+footer .contact-list a {
+  display: block;
+  color: var(--color-ink);
+  text-decoration: none;
+  font-size: var(--size-body);
+  margin-bottom: 8px;
+  font-weight: var(--weight-medium);
+  transition: color var(--transition);
+}
+
+footer .contact-list a:hover { color: var(--color-accent); }
+
+footer .signature {
+  grid-column: 1 / -1;
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-rule);
+  font-size: 13px;
+  color: var(--color-ink-faint);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ─── ENTRANCE ANIMATION ───────────────────────────────────── */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero > * {
+  opacity: 0;
+  animation: rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+
+.hero .left > *:nth-child(1) { animation-delay: 0.1s; }
+.hero .left > *:nth-child(2) { animation-delay: 0.2s; }
+.hero .left > *:nth-child(3) { animation-delay: 0.3s; }
+.hero .left > *:nth-child(4) { animation-delay: 0.4s; }
+.hero .left > *:nth-child(5) { animation-delay: 0.5s; }
+.hero .portrait { animation-delay: 0.3s; }
+
+.hero .left > * {
+  opacity: 0;
+  animation: rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+
+/* ─── RESPONSIVE ───────────────────────────────────────────── */
+@media (max-width: 880px) {
+  .wrap         { padding: 0 var(--page-padding-sm); }
+  nav           { padding: 20px 0; }
+  nav .links    { gap: 20px; font-size: 14px; }
+  .monogram     { font-size: 24px; }
+  .hero         { grid-template-columns: 1fr; gap: 48px; min-height: auto; padding-top: 20px; }
+  .hero .portrait { max-width: 320px; margin: 0 auto; }
+  .hero blockquote { font-size: 16px; }
+  .about-body   { grid-template-columns: 1fr; gap: 24px; }
+  .achievement  { grid-template-columns: 1fr; gap: 8px; padding: 20px; }
+  .achievement .year { font-size: 22px; }
+  .projects     { grid-template-columns: 1fr; }
+  .project      { padding: 28px; }
+  footer        { grid-template-columns: 1fr; gap: 32px; }
+  footer .contact-list { text-align: left; }
+  footer .signature { flex-direction: column; gap: 8px; }
+  section       { margin-bottom: var(--space-section-sm); }
+}
+
+@media (max-width: 540px) {
+  nav .links { gap: 14px; font-size: 13px; }
+  nav .links a:nth-child(n+4) { display: none; }
+  .btn { padding: 12px 22px; font-size: 14px; }
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <!-- ═══════════  NAVIGATION  ═══════════ -->
+  <nav>
+    <a href="#" class="monogram">N<span>.</span></a>
+    <ul class="links">
+      <li><a href="#tentang">About</a></li>
+      <li><a href="#prestasi">Achivements</a></li>
+      <li><a href="#karya">Projects</a></li>
+      <li><a href="#kontak">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══════════  HERO  ═══════════ -->
+  <section class="hero">
+
+    <div class="left">
+      <div class="tags">
+        <span class="tag">Student</span>
+        <span class="tag">Writer</span>
+        <span class="tag">Human</span>
+      </div>
+
+      <h1>Alviadi Fauzan<br><em>SMA Wardaya </em></h1>
+
+      <div class="meta-line">
+     [ Tanggal Lahir ] <span class="dot">·</span>Jakarta, Indonesia
+      </div>
+
+      <blockquote>
+        "Being born poor and weak isnt your fault, staying that way until the day you die is."
+        <cite>~Bill Gates</cite>
+      </blockquote>
+
+      <div class="ctas">
+        <a href="#prestasi" class="btn btn-primary">Achivement List</a>
+        <a href="#kontak" class="btn btn-secondary">Contact Me</a>
+      </div>
+    </div>
+
+    <!-- ┌─────────────────────────────────────────────────────────┐
+         │  FOTO PROFIL                                            │
+         ├─────────────────────────────────────────────────────────┤
+         │  CARA MENAMBAHKAN FOTO:                                 │
+         │  1. Simpan foto kamu dengan nama `profile.jpg`          │
+         │     di FOLDER YANG SAMA dengan file portfolio.html ini. │
+         │  2. Refresh halaman. Foto akan muncul otomatis.         │
+         │                                                         │
+         │  TIPS FOTO:                                             │
+         │  • Rasio portrait (tinggi) terbaik (4:5 atau 3:4).      │
+         │  • Minimum 600×750 piksel; lebih besar lebih baik.      │
+         │  • Wajah dan bahu, pencahayaan natural.                 │
+         │                                                         │
+         │  KALAU NAMA FILE BERBEDA:                               │
+         │  • Ubah `src="profile.jpg"` di bawah ke nama filenya.   │
+         │                                                         │
+         │  BENTUK FOTO (kotak/lingkaran):                         │
+         │  • Di CSS :root, ubah --portrait-radius:                │
+         │     16px = kotak agak melengkung (default)              │
+         │     0    = kotak tajam                                  │
+         │     50%  = lingkaran                                    │
+         └─────────────────────────────────────────────────────────┘ -->
+    <div class="portrait">
+      <img src="profile.jpg" alt="Foto Narendra"
+           onerror="this.removeAttribute('src')">
+    </div>
+
+  </section>
+
+  <!-- ═══════════  TENTANG (ABOUT)  ═══════════ -->
+  <section id="About me">
+    <div class="section-head">
+      <span class="num">About me</span>
+      <h2>Abit of <em>information</em></h2>
+    </div>
+    <div class="about-body">
+      <aside class="about-meta">
+        <div class="row">
+          <span class="label">Location</span>
+          <span class="value">Jakarta, Indonesia</span>
+        </div>
+        <div class="row">
+          <span class="label">School</span>
+          <span class="value">SD Yasporbi 58 | SMP Labschool Jakarta 31 | SMA Wardaya 5</span>
+        </div>
+        <div class="row">
+          <span class="label">Language</span>
+          <span class="value">Indonesia, English</span>
+        </div>
+        <div class="row">
+          <span class="label">Focus</span>
+          <span class="value">Model UN, Research, and Physics</span>
+        </div>
+      </aside>
+      <div class="about-prose">
+        <p>
+          Tulis dua atau tiga paragraf dengan suaramu sendiri. Kalimat pertama harus benar-benar bekerja — pembaca cepat memutuskan apakah mereka mau lanjut membaca. Hindari klise ("Saya selalu tertarik pada..."). Mulai dengan momen spesifik, minat yang konkret, atau klaim yang tajam tentang apa yang kamu lakukan.
+        </p>
+        <p>
+          Gunakan paragraf kedua untuk substansi: apa yang kamu kerjakan, apa yang kamu pelajari darinya, pertanyaan mana yang menarik untuk kamu kejar. <em>Tunjukkan bukti berpikir, bukan sekadar antusiasme.</em> Sebutkan kerja debatmu, topik yang sudah kamu argumenkan, disiplin yang sudah kamu baca.
+        </p>
+        <p>
+          Tutup dengan arah. Apa yang sedang kamu tuju — kuliah, bidang studi tertentu, kompetisi, proyek. Jaga total di bawah 250 kata. Bagian-bagian lain di halaman ini yang akan menunjukkan sisanya.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════  PRESTASI (ACHIEVEMENTS)  ═══════════
+       Untuk MENAMBAH entri, salin satu blok <article class="achievement">.
+       Untuk MENGHAPUS entri, hapus seluruh blok <article>...</article>. -->
+  <section id="prestasi">
+    <div class="section-head">
+      <span class="num">Achivement List</span>
+      <h2>Listed <em>Achivements</em></h2>
+    </div>
+    <div class="achievements">
+
+      <article class="achievement">
+        <div class="year">2026</div>
+        <div class="body">
+          <h3>[ Judul Prestasi ]</h3>
+          <div class="venue">[ Penyelenggara atau Tempat ]</div>
+          <p>Satu atau dua kalimat menjelaskan cakupan, apa yang dibutuhkan, dan hasil. Spesifik soal skala ("tingkat nasional", "120 tim peserta") dan peran ("pembicara pertama", "kapten tim").</p>
+        </div>
+      </article>
+
+      <article class="achievement">
+        <div class="year">2025</div>
+        <div class="body">
+          <h3>[ Judul Prestasi ]</h3>
+          <div class="venue">[ Penyelenggara atau Tempat ]</div>
+          <p>Deskripsi. Kalau ini prestasi akademik — olimpiade, hadiah, beasiswa — sebut disiplin dan tingkatnya.</p>
+        </div>
+      </article>
+
+      <article class="achievement">
+        <div class="year">2025</div>
+        <div class="body">
+          <h3>[ Judul Prestasi ]</h3>
+          <div class="venue">[ Penyelenggara atau Tempat ]</div>
+          <p>Deskripsi.</p>
+        </div>
+      </article>
+
+      <article class="achievement">
+        <div class="year">2024</div>
+        <div class="body">
+          <h3>[ Judul Prestasi ]</h3>
+          <div class="venue">[ Penyelenggara atau Tempat ]</div>
+          <p>Deskripsi. Pertahankan daftar untuk prestasi yang benar-benar bermakna — daftar panjang yang lemah malah melemahkan yang kuat.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════  KARYA (PROJECTS)  ═══════════
+       Untuk MENAMBAH proyek, salin satu blok <article class="project">.
+       Untuk MENGHAPUS, hapus blok tersebut.
+       Proyek tampil dalam grid 2 kolom — jaga jumlahnya GENAP. -->
+  <section id="karya">
+    <div class="section-head">
+      <span class="num">§ 03 — Karya</span>
+      <h2>Proyek <em>terpilih</em></h2>
+    </div>
+    <div class="projects">
+
+      <article class="project">
+        <span class="tag">Debat · 2026</span>
+        <h3>Hak untuk <em>pergi</em></h3>
+        <p>
+          Materi persiapan untuk debat formal berbahasa Indonesia tentang apakah remaja berhak beremigrasi sebagai bentuk protes terhadap kondisi sosial-ekonomi. Mengambil posisi kontra. Mencakup naskah pidato penuh, rencana cross-examination, dan lembar bukti yang merangkum UU No. 6/2011, data migrasi BPS, dan angka ketenagakerjaan pemuda dari ILO.
+        </p>
+        <div class="meta">Penulisan pidato · Konstruksi kasus · Riset empiris</div>
+      </article>
+
+      <article class="project">
+        <span class="tag">[ Kategori ] · [ Tahun ]</span>
+        <h3>[ Judul <em>proyek</em> ]</h3>
+        <p>
+          Beberapa kalimat menjelaskan apa proyeknya, apa yang kamu lakukan, dan apa hasilnya. Kalau kolaboratif, sebut kontribusi spesifikmu. Kalau menghasilkan sesuatu yang konkret — makalah, presentasi, dataset — sebut.
+        </p>
+        <div class="meta">[ Skill 1 ] · [ Skill 2 ] · [ Skill 3 ]</div>
+      </article>
+
+      <article class="project">
+        <span class="tag">[ Kategori ] · [ Tahun ]</span>
+        <h3>[ Judul <em>proyek</em> ]</h3>
+        <p>
+          Deskripsi. Proyek tidak harus formal. Proyek baca mandiri, inisiatif komunitas, minat riset yang berkelanjutan — semua ini terbaca sebagai bukti kerja intelektual mandiri.
+        </p>
+        <div class="meta">[ Skill 1 ] · [ Skill 2 ]</div>
+      </article>
+
+      <article class="project">
+        <span class="tag">[ Kategori ] · [ Tahun ]</span>
+        <h3>[ Judul <em>proyek</em> ]</h3>
+        <p>Deskripsi.</p>
+        <div class="meta">[ Skill 1 ] · [ Skill 2 ]</div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════  KONTAK (FOOTER)  ═══════════ -->
+  <footer id="kontak">
+    <div class="closing">
+    May we <em>Explore</em>.
+    </div>
+    <div class="contact-list">
+      <span class="label">Contact Me</span>
+      <a href="mailto:[ email@example.com ]">alviadi.fauzan01@gmail.com</a>
+      <a href="#">IG: alvin_shvr</a>
+    </div>
+    <div class="signature">
+      <span>© 2026 Alviadi Fauzan
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>
