@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
@@ -789,39 +788,48 @@ footer .signature {
       <article class="achievement">
         <div class="year">2026</div>
         <div class="body">
-          <h3>[ Judul Prestasi ]</h3>
-          <div class="venue">[ Penyelenggara atau Tempat ]</div>
-          <p>Satu atau dua kalimat menjelaskan cakupan, apa yang dibutuhkan, dan hasil. Spesifik soal skala ("tingkat nasional", "120 tim peserta") dan peran ("pembicara pertama", "kapten tim").</p>
+          <h3>Jakarta International Science Fair, Engineering🥇🏅</h3>
+          <div class="venue">Indonesia International Institute for Life-Sciences (I3L)</div>
+          <p>Gold medal and IYSA Special Award in the Engineering category in a international reseach competition held by Indonesia International Institute for Life-Sciences in late-April</p>
+        </div>
+      </article>
+
+      <article class="achievement">
+        <div class="year">2026</div>
+        <div class="body">
+          <h3>Jakarta International Science Fair, Life Sciences🥈</h3>
+          <div class="venue">Indonesia International Institute for Life-Sciences (I3L)</div>
+          <p>Silver medal in the Life Sciences category in a international reseach competition held by Indonesia International Institute for Life-Sciences in late-April</p>
+        </div>
+      </article>
+
+      <article class="achievement">
+        <div class="year">2026</div>
+        <div class="body">
+          <h3>Global Youth Invention and Innovation Fair, Life Science🥇🏅</h3>
+          <div class="venue">Institut Pertanian Bogor (IPB)</div>
+          <p>Gold medal and MIICA Special Award in the Life Sciences category in a international reseach competition held by Institut Pertanian Bogor in mid-january</p>
         </div>
       </article>
 
       <article class="achievement">
         <div class="year">2025</div>
         <div class="body">
-          <h3>[ Judul Prestasi ]</h3>
-          <div class="venue">[ Penyelenggara atau Tempat ]</div>
-          <p>Deskripsi. Kalau ini prestasi akademik — olimpiade, hadiah, beasiswa — sebut disiplin dan tingkatnya.</p>
+          <h3>Indonesia International Applied Science Project Olympiad, Applied Life Sciences🥇</h3>
+          <div class="venue">Universitas Gadjah Mada (UGM)</div>
+          <p>Gold medal in the Applied Life Sciences category in a international reseach competition held by the university of gadjah mada in late-December with 576 participants in the secondary level</p>
         </div>
       </article>
 
-      <article class="achievement">
+ <article class="achievement">
         <div class="year">2025</div>
         <div class="body">
-          <h3>[ Judul Prestasi ]</h3>
-          <div class="venue">[ Penyelenggara atau Tempat ]</div>
-          <p>Deskripsi.</p>
+          <h3>Olimpiade Rihand Creative, English, Chemistry, Economy🥇🥈🥉</h3>
+          <div class="venue">PT Rihand Kreatif Indonesia</div>
+          <p>Gold medal in English, Silver medal in Chemistry, and Bronze medal in Economy at a National Level</p>
         </div>
       </article>
-
-      <article class="achievement">
-        <div class="year">2024</div>
-        <div class="body">
-          <h3>[ Judul Prestasi ]</h3>
-          <div class="venue">[ Penyelenggara atau Tempat ]</div>
-          <p>Deskripsi. Pertahankan daftar untuk prestasi yang benar-benar bermakna — daftar panjang yang lemah malah melemahkan yang kuat.</p>
-        </div>
-      </article>
-
+      
     </div>
   </section>
 
@@ -831,8 +839,8 @@ footer .signature {
        Proyek tampil dalam grid 2 kolom — jaga jumlahnya GENAP. -->
   <section id="karya">
     <div class="section-head">
-      <span class="num">§ 03 — Karya</span>
-      <h2>Proyek <em>terpilih</em></h2>
+      <span class="num">Project list</span>
+      <h2>Listed <em>Projects</em></h2>
     </div>
     <div class="projects">
 
@@ -846,16 +854,16 @@ footer .signature {
       </article>
 
       <article class="project">
-        <span class="tag">[ Kategori ] · [ Tahun ]</span>
+        <span class="tag">Research · 2026</span>
         <h3>[ Judul <em>proyek</em> ]</h3>
         <p>
           Beberapa kalimat menjelaskan apa proyeknya, apa yang kamu lakukan, dan apa hasilnya. Kalau kolaboratif, sebut kontribusi spesifikmu. Kalau menghasilkan sesuatu yang konkret — makalah, presentasi, dataset — sebut.
         </p>
-        <div class="meta">[ Skill 1 ] · [ Skill 2 ] · [ Skill 3 ]</div>
+        <div class="meta">Solar panel structure knowledge · Research paper writing · Chemical mixing expirience · Solar cell hotplating</div>
       </article>
 
       <article class="project">
-        <span class="tag">[ Kategori ] · [ Tahun ]</span>
+        <span class="tag">Research · 2026</span>
         <h3>[ Judul <em>proyek</em> ]</h3>
         <p>
           Deskripsi. Proyek tidak harus formal. Proyek baca mandiri, inisiatif komunitas, minat riset yang berkelanjutan — semua ini terbaca sebagai bukti kerja intelektual mandiri.
@@ -864,7 +872,7 @@ footer .signature {
       </article>
 
       <article class="project">
-        <span class="tag">[ Kategori ] · [ Tahun ]</span>
+        <span class="tag">Research · 2025 & 2026</span>
         <h3>[ Judul <em>proyek</em> ]</h3>
         <p>Deskripsi.</p>
         <div class="meta">[ Skill 1 ] · [ Skill 2 ]</div>
@@ -876,7 +884,7 @@ footer .signature {
   <!-- ═══════════  KONTAK (FOOTER)  ═══════════ -->
   <footer id="kontak">
     <div class="closing">
-    May we <em>Explore</em>.
+    May we <em>Strive for the better</em>.
     </div>
     <div class="contact-list">
       <span class="label">Contact Me</span>
