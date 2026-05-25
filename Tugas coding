@@ -845,16 +845,7 @@ footer .signature {
     <div class="projects">
 
       <article class="project">
-        <span class="tag">Debat · 2026</span>
-        <h3>Hak untuk <em>pergi</em></h3>
-        <p>
-          Materi persiapan untuk debat formal berbahasa Indonesia tentang apakah remaja berhak beremigrasi sebagai bentuk protes terhadap kondisi sosial-ekonomi. Mengambil posisi kontra. Mencakup naskah pidato penuh, rencana cross-examination, dan lembar bukti yang merangkum UU No. 6/2011, data migrasi BPS, dan angka ketenagakerjaan pemuda dari ILO.
-        </p>
-        <div class="meta">Penulisan pidato · Konstruksi kasus · Riset empiris</div>
-      </article>
-
-      <article class="project">
-        <span class="tag">Research · 2026</span>
+        <span class="tag">Research (On going) · 2026</span>
         <h3>[ Judul <em>proyek</em> ]</h3>
         <p>
           Beberapa kalimat menjelaskan apa proyeknya, apa yang kamu lakukan, dan apa hasilnya. Kalau kolaboratif, sebut kontribusi spesifikmu. Kalau menghasilkan sesuatu yang konkret — makalah, presentasi, dataset — sebut.
@@ -864,18 +855,18 @@ footer .signature {
 
       <article class="project">
         <span class="tag">Research · 2026</span>
-        <h3>[ Judul <em>proyek</em> ]</h3>
+        <h3>Solaire: Comparative Performance of Anthocyanin-Based Natural Dyes in Dye-Sensitized Solar Cells (DSSC) for Semi-Transparent Solar Applications</h3>
         <p>
           Deskripsi. Proyek tidak harus formal. Proyek baca mandiri, inisiatif komunitas, minat riset yang berkelanjutan — semua ini terbaca sebagai bukti kerja intelektual mandiri.
         </p>
-        <div class="meta">[ Skill 1 ] · [ Skill 2 ]</div>
+        <div class="meta">Solar cell structure assembely · Paper writing · Natural chemical mixture extraction · Multimeter electricity testing</div>
       </article>
 
       <article class="project">
         <span class="tag">Research · 2025 & 2026</span>
-        <h3>[ Judul <em>proyek</em> ]</h3>
+        <h3>SWIMA-D2: Investigation of Bioactive Compound from Mahogany Tree Leaves (Swietenia Macrophylla) Extract as Drugs Candidate for Type 2 Diabetes Mellitus</h3>
         <p>Deskripsi.</p>
-        <div class="meta">[ Skill 1 ] · [ Skill 2 ]</div>
+        <div class="meta">Insilico simulation · Research paper writing · Invitro testing · Organoleptic testing · Product design and packaging</div>
       </article>
 
     </div>
@@ -884,7 +875,7 @@ footer .signature {
   <!-- ═══════════  KONTAK (FOOTER)  ═══════════ -->
   <footer id="kontak">
     <div class="closing">
-    May we <em>Strive for the better</em>.
+    May we <em>Strive for the better.</em>
     </div>
     <div class="contact-list">
       <span class="label">Contact Me</span>
