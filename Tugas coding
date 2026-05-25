@@ -686,7 +686,7 @@ footer .signature {
     <div class="left">
       <div class="tags">
         <span class="tag">Student</span>
-        <span class="tag">Writer</span>
+        <span class="tag">Research Enthusiast</span>
         <span class="tag">Runner</span>
       </div>
 
@@ -757,7 +757,7 @@ footer .signature {
         </div>
         <div class="row">
           <span class="label">Hobby</span>
-          <span class="value">Jogging, Cooking, Billiard, Chess, Bicycling and Basketball</span>
+          <span class="value">Jogging, Cooking, Billiard, Chess, Bicycling, Surfing and Basketball</span>
         </div>
         <div class="row">
           <span class="label">Focus</span>
@@ -842,7 +842,7 @@ footer .signature {
         <span class="tag">Research · 2026</span>
         <h3>Solaire: Comparative Performance of Anthocyanin-Based Natural Dyes in Dye-Sensitized Solar Cells (DSSC) for Semi-Transparent Solar Applications</h3>
         <p>
-          Deskripsi. Proyek tidak harus formal. Proyek baca mandiri, inisiatif komunitas, minat riset yang berkelanjutan — semua ini terbaca sebagai bukti kerja intelektual mandiri.
+         Experimental science project investigating whether everyday plant pigments — from blueberries, purple sweet potato, and purple cabbage — could power a new kind of solar window. Built three prototype dye-sensitized solar cells from scratch in Jakarta, measuring voltage and power output under matched sunlight conditions. Blueberry extract performed best while purple cabbage performed worst. The project ran headfirst into the central trade-off of the field: dyes that absorb enough light to generate useful power tend to block the visibility that windows need. Co-authored as a three-person research team
         </p>
         <div class="meta">Solar cell structure assembely · Paper writing · Natural chemical mixture extraction · Multimeter electricity testing</div>
       </article>
@@ -850,8 +850,8 @@ footer .signature {
       <article class="project">
         <span class="tag">Research · 2025 & 2026</span>
         <h3>SWIMA-D2: Investigation of Bioactive Compound from Mahogany Tree Leaves (Swietenia Macrophylla) Extract as Drugs Candidate for Type 2 Diabetes Mellitus</h3>
-        <p>Deskripsi.</p>
-        <div class="meta">Insilico simulation · Research paper writing · Invitro testing · Organoleptic testing · Product design and packaging</div>
+        <p>Four-person team research project investigating compounds in Indonesian mahogany leaves (Swietenia macrophylla) as starting points for Type 2 diabetes research. Combined hands-on ethanol extraction and phytochemical screening with a full computational drug-discovery pipeline — PubChem, SwissModel, PyMol, PyRx, SwissADME, ProTox — to compare flavonoids, limonoids, and tannins. Rutin scored best (−8.6 kcal/mol binding affinity). The project also designed a tea-bag delivery format drawing on the leaves' traditional use in Indonesian and Indian medicine. </p>
+        <div class="meta">In silico simulation · Research paper writing · In vitro testing · Organoleptic testing · Product design and packaging</div>
       </article>
 
     </div>
