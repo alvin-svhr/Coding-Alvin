@@ -671,7 +671,7 @@ footer .signature {
 
   <!-- ═══════════  NAVIGATION  ═══════════ -->
   <nav>
-    <a href="#" class="monogram">N<span>.</span></a>
+    <a href="#" class="monogram">Portfolio<span>.</span></a>
     <ul class="links">
       <li><a href="#tentang">About</a></li>
       <li><a href="#prestasi">Achivements</a></li>
@@ -687,13 +687,13 @@ footer .signature {
       <div class="tags">
         <span class="tag">Student</span>
         <span class="tag">Writer</span>
-        <span class="tag">Human</span>
+        <span class="tag">Runner</span>
       </div>
 
       <h1>Alviadi Fauzan<br><em>SMA Wardaya </em></h1>
 
       <div class="meta-line">
-     [ Tanggal Lahir ] <span class="dot">·</span>Jakarta, Indonesia
+     </span>Jakarta, Indonesia
       </div>
 
       <blockquote>
@@ -730,8 +730,7 @@ footer .signature {
          │     50%  = lingkaran                                    │
          └─────────────────────────────────────────────────────────┘ -->
     <div class="portrait">
-      <img src="profile.jpg" alt="Foto Narendra"
-           onerror="this.removeAttribute('src')">
+     <img src="profile.jpg" alt="Foto Narendra" onerror="this.removeAttribute('src')">
     </div>
 
   </section>
@@ -757,20 +756,15 @@ footer .signature {
           <span class="value">Indonesia, English</span>
         </div>
         <div class="row">
+          <span class="label">Hobby</span>
+          <span class="value">Jogging, Cooking, Billiard, Chess, Bicycling and Basketball</span>
+        </div>
+        <div class="row">
           <span class="label">Focus</span>
           <span class="value">Model UN, Research, and Physics</span>
         </div>
       </aside>
       <div class="about-prose">
-        <p>
-          Tulis dua atau tiga paragraf dengan suaramu sendiri. Kalimat pertama harus benar-benar bekerja — pembaca cepat memutuskan apakah mereka mau lanjut membaca. Hindari klise ("Saya selalu tertarik pada..."). Mulai dengan momen spesifik, minat yang konkret, atau klaim yang tajam tentang apa yang kamu lakukan.
-        </p>
-        <p>
-          Gunakan paragraf kedua untuk substansi: apa yang kamu kerjakan, apa yang kamu pelajari darinya, pertanyaan mana yang menarik untuk kamu kejar. <em>Tunjukkan bukti berpikir, bukan sekadar antusiasme.</em> Sebutkan kerja debatmu, topik yang sudah kamu argumenkan, disiplin yang sudah kamu baca.
-        </p>
-        <p>
-          Tutup dengan arah. Apa yang sedang kamu tuju — kuliah, bidang studi tertentu, kompetisi, proyek. Jaga total di bawah 250 kata. Bagian-bagian lain di halaman ini yang akan menunjukkan sisanya.
-        </p>
       </div>
     </div>
   </section>
@@ -843,15 +837,6 @@ footer .signature {
       <h2>Listed <em>Projects</em></h2>
     </div>
     <div class="projects">
-
-      <article class="project">
-        <span class="tag">Research (On going) · 2026</span>
-        <h3>[ Judul <em>proyek</em> ]</h3>
-        <p>
-          Beberapa kalimat menjelaskan apa proyeknya, apa yang kamu lakukan, dan apa hasilnya. Kalau kolaboratif, sebut kontribusi spesifikmu. Kalau menghasilkan sesuatu yang konkret — makalah, presentasi, dataset — sebut.
-        </p>
-        <div class="meta">Solar panel structure knowledge · Research paper writing · Chemical mixing expirience · Solar cell hotplating</div>
-      </article>
 
       <article class="project">
         <span class="tag">Research · 2026</span>
