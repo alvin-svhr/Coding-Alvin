@@ -730,7 +730,7 @@ footer .signature {
          │     50%  = lingkaran                                    │
          └─────────────────────────────────────────────────────────┘ -->
     <div class="portrait">
-     <img src="profile.jpg" alt="Foto Narendra" onerror="this.removeAttribute('src')">
+     <img src="https://raw.githubusercontent.com/alvin-svhr/Coding-Alvin/refs/heads/main/WhatsApp%20Image%202026-05-25%20at%2017.41.12.jpeg">
     </div>
 
   </section>
